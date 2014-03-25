@@ -1,7 +1,36 @@
-% layout 'default';
-% title 'Welcome';
-<h2><%= $msg %></h2>
-This page was generated from the template "templates/example/welcome.html.ep"
-and the layout "templates/layouts/default.html.ep",
-<a href="<%== url_for %>">click here</a> to reload the page or
-<a href="/index.html">here</a> to move forward to a static page.
+
+% layout 'bootstrap';
+% title 'Welcome to NeuroNet';
+<div class="container">
+	<div class="jumbotron">
+				<h1><%= $msg %></h1>
+				<h4>A repository for gene expression and variation related to memory and neurodevelopmental disorders</h4>
+				This website will allow you to explore the data associated with the publication <i>the title</i> published in <i>the journal</i>. The project is an
+				integration of multiple data sources and this resource is an attempt to make this integration as easily accessible to the community as possible. 
+				 <br>
+				 <hr>
+				 <div class="centered">
+				 	<p><a class="btn btn-primary btn-lg">Learn more</a>
+				 	<a class="btn btn-primary btn-lg">Select module</a>
+				 	<a class="btn btn-primary btn-lg">Select gene</a></p>
+				 </div>
+		</div>	
+		<div class="row">
+			<div class="col-lg-6">
+			<h2>Some Info</h2>
+			Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+			</div>
+			<div class="col-lg-6">
+			<h2>Some Info</h2>
+			Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+			</div>
+			<div class="col-lg-6">
+			<h2>Some Info</h2>
+			Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+			</div>
+			<div class="col-lg-6">
+			<h2>Some Info</h2>
+			Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+			</div>
+		</div>		
+</div>

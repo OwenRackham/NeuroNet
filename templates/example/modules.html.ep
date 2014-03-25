@@ -1,0 +1,341 @@
+
+% layout 'bootstrap';
+% title 'Welcome to NeuroNet';
+<div class="container">
+		<div class="row">
+			<div class="col-lg-12 centered" id="intro">
+				<h2> Module <%=$module%> </h2>
+			</div>
+		</div>
+		<hr>	
+		<div class="row">
+		<div class="col-lg-12 centered">
+			<div class="centered">
+					
+				 	<p><a class="btn btn-primary btn-lg" id="DAPPLE">DAPPLE</a>
+				 	<a class="btn  btn-lg" id="STRING">STRING</a>
+				 	<a class="btn  btn-lg" id="COEXP">CO-EXPRESSION</a></p>
+				 	<p> Select which interaction type you would like to view. </p>
+			</div>
+		</div>
+		</div>
+		<div class="row">
+		<div class="col-lg-12 centered" id="module_net">
+		</div>
+		<div class="col-lg-6" id="denovo">
+		<h2>Rare Denovo Mutations</h2><a class="btn btn-primary btn-sm" id="showDenovo">show on network</a>
+		
+		<table class="table table-striped table-hover " id="denovo_table">
+  <thead>
+    <tr>
+      <th>Gene Symbol</th>
+      <th>Mutation</th>
+      <th>Author</th>
+      <th>Disease</th>
+    </tr>
+  </thead>
+</table>
+
+<script>
+var denovodata;
+var gwasdata;
+			function denvotablecreate(table_data){
+        		tbl  = document.getElementById('denovo_table');
+				$("#denovo_table tbody").remove(); 
+        		var tbdy=document.createElement('tbody');
+        			for(var i = 0; i < table_data.length; i++){
+						var tr=document.createElement('tr');
+        				for(var j = 0; j < table_data[i].length; j++){
+        					 var td=document.createElement('td');
+        					td.appendChild(document.createTextNode(table_data[i][j]));
+        					tr.appendChild(td);
+            			}
+            			
+            			tbdy.appendChild(tr);
+            			
+    				}
+    				
+    				tbl.appendChild(tbdy);
+				}
+				var url ='moduletabledenovo?module=<%=$module%>'
+				$.get(url, function(data) {
+					denovodata = data;
+					denvotablecreate(data.data.table)
+				})
+				
+</script>
+ 
+</div>		
+
+<div class="col-lg-6" id="gwas">
+		<h2>GWAS variation</h2><a class="btn btn-primary btn-sm" id="showGWAS">show on network</a>
+		<table class="table table-striped table-hover " id="gwas_table">
+  <thead>
+    <tr>
+      <th>Gene Symbol</th>
+      <th>Disease</th>
+      <th>Adjusted P-value</th>
+      <th>Min P-value</th>
+    </tr>
+  </thead>
+</table>
+
+<script>
+			function gwastablecreate(table_data){
+        		tbl  = document.getElementById('gwas_table');
+				$("#gwas_table tbody").remove(); 
+        		var tbdy=document.createElement('tbody');
+        			for(var i = 0; i < table_data.length; i++){
+						var tr=document.createElement('tr');
+        				for(var j = 0; j < table_data[i].length; j++){
+        					 var td=document.createElement('td');
+        					td.appendChild(document.createTextNode(table_data[i][j]));
+        					tr.appendChild(td);
+            			}
+            			
+            			tbdy.appendChild(tr);
+            			
+    				}
+    				
+    				tbl.appendChild(tbdy);
+				}
+				var url ='moduletableGWAS?module=<%=$module%>'
+				$.get(url, function(data) {
+					gwasdata = data;
+					gwastablecreate(data.data.table)
+				})
+				
+</script>
+ 
+</div>		
+		
+		
+<style>
+
+.node {
+  font: 300 6px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  fill: #bbb;
+  
+}
+
+.node:hover {
+  fill: #000;
+}
+
+.link {
+  stroke: steelblue;
+  stroke-opacity: .4;
+  fill: none;
+  pointer-events: none;
+}
+
+.node:hover,
+.node--source,
+.node--target {
+  font-weight: 700;
+   font: 300 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+     text-indent:-50px;
+     fill: #FF9900;
+}
+
+.node--source {
+  fill: #FF9900;
+}
+
+.node--target {
+  fill: #FF9900;
+}
+
+.link--source,
+.link--target {
+  stroke-opacity: 0.9;
+  stroke-width: 2px;
+  
+}
+
+.link--source {
+  stroke: #FF9900;
+}
+
+.link--target {
+  stroke: #FF9900;
+}
+
+</style>
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+
+
+function circcreate(type){
+document.getElementById('module_net').innerHTML = "";
+var diameter = 1200,
+    radius = diameter / 2,
+    innerRadius = radius - 120;
+
+var cluster = d3.layout.cluster()
+    .size([360, innerRadius])
+    .sort(null)
+    .value(function(d) { return d.size; });
+
+var bundle = d3.layout.bundle();
+
+var line = d3.svg.line.radial()
+    .interpolate("bundle")
+    .tension(.85)
+    .radius(function(d) { return d.y; })
+    .angle(function(d) { return d.x / 180 * Math.PI; });
+var svg = d3.select("#module_net").append("svg")
+    .attr("width", diameter)
+    .attr("height", diameter)
+  .append("g")
+    .attr("transform", "translate(" + radius + "," + radius + ")");
+
+var link = svg.append("g").selectAll(".link"),
+    node = svg.append("g").selectAll(".node");
+var url = "modulenet?module=<%=$module%>&type=";
+d3.json(url.concat(type), function(error, classes) {
+  var nodes = cluster.nodes(packageHierarchy(classes.data)),
+      links = packageImports(nodes);
+
+  link = link
+      .data(bundle(links))
+    .enter().append("path")
+      .each(function(d) { d.source = d[0], d.target = d[d.length - 1]; })
+      .attr("class", "link")
+      .attr("d", line);
+
+  node = node
+      .data(nodes.filter(function(n) { return !n.children; }))
+    .enter().append("text")
+      .attr("class", "node")
+      .attr("dx", function(d) { return d.x < 180 ? 8 : -8; })
+      .attr("dy", ".31em")
+      .attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")" + (d.x < 180 ? "" : "rotate(180)"); })
+      .style("text-anchor", function(d) { return d.x < 180 ? "start" : "end"; })
+      .text(function(d) { return d.key; })
+      .on("mouseover", mouseovered)
+      .on("mouseout", mouseouted);
+});
+
+function mouseovered(d) {
+  node
+      .each(function(n) { n.target = n.source = false; });
+
+  link
+      .classed("link--target", function(l) { if (l.target === d) return l.source.source = true; })
+      .classed("link--source", function(l) { if (l.source === d) return l.target.target = true; })
+    .filter(function(l) { return l.target === d || l.source === d; })
+      .each(function() { this.parentNode.appendChild(this); });
+
+  node
+      .classed("node--target", function(n) { return n.target; })
+      .classed("node--source", function(n) { return n.source; });
+}
+
+function mouseouted(d) {
+  link
+      .classed("link--target", false)
+      .classed("link--source", false);
+
+  node
+      .classed("node--target", false)
+      .classed("node--source", false);
+}
+
+var SD = document.getElementById("showDenovo");
+var SG = document.getElementById("showGWAS");
+SD.onclick=function(){
+	alert(denovodata.data.list);
+	var str = String(denovodata.data.list);
+	var res = str.split(","); 
+	res.forEach(function(d) {
+    	mouseovered(d);
+  	}); 
+}
+SG.onclick=function(){
+	alert(gwasdata.data.list);
+	var gwas = str.split(",");
+	
+}
+
+d3.select(self.frameElement).style("height", diameter + "px");
+
+// Lazily construct the package hierarchy from class names.
+function packageHierarchy(classes) {
+  var map = {};
+
+  function find(name, data) {
+    var node = map[name], i;
+    if (!node) {
+      node = map[name] = data || {name: name, children: []};
+      if (name.length) {
+        node.parent = find(name.substring(0, i = name.lastIndexOf(":::")));
+        node.parent.children.push(node);
+        node.key = name.substring(i + 1);
+      }
+    }
+    return node;
+  }
+
+  classes.forEach(function(d) {
+    find(d.name, d);
+  });
+
+  return map[""];
+}
+
+// Return a list of imports for the given array of nodes.
+function packageImports(nodes) {
+  var map = {},
+      imports = [];
+
+  // Compute a map from name to node.
+  nodes.forEach(function(d) {
+    map[d.name] = d;
+  });
+
+  // For each import, construct a link from the source to target node.
+  nodes.forEach(function(d) {
+    if (d.imports) d.imports.forEach(function(i) {
+      imports.push({source: map[d.name], target: map[i]});
+    });
+  });
+
+  return imports;
+}
+}
+var type = 'DAPPLE';
+circcreate(type);
+var D = document.getElementById("DAPPLE");
+var S = document.getElementById("STRING");
+var C = document.getElementById("COEXP");
+
+D.onclick=function(){
+var type = 'DAPPLE';
+circcreate(type);
+$("#DAPPLE").addClass("btn-primary");
+$("#STRING").removeClass("btn-primary");
+$("#COEXP").removeClass("btn-primary");
+};
+S.onclick=function(){
+var type = 'STRING';
+circcreate(type);
+$("#DAPPLE").removeClass("btn-primary");
+$("#STRING").addClass("btn-primary");
+$("#COEXP").removeClass("btn-primary");
+};
+C.onclick=function(){
+var type = 'CoExp';
+circcreate(type);
+$("#DAPPLE").removeClass("btn-primary");
+$("#STRING").removeClass("btn-primary");
+$("#COEXP").addClass("btn-primary");
+};
+
+
+
+</script>		
+		
+
+</div>

@@ -1,0 +1,21 @@
+	<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+        <div class="container">
+		<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</a>
+        <a class="brand" href='/'>Mogrify</a>
+		<div class="nav-collapse">
+			<ul class="nav">
+                <li<%== ($section =~ /home/i)?' class="active"':''%>><a href='/index'>Home</a></li>
+                <li<%== ($section =~ /convert/i)?' class="active"':''%>><a href='/convert'>Convert</a></li>
+                <li<%== ($section =~ /atlas/i)?' class="active"':''%>><a href='/atlas'>Atlas</a></li>
+                <li<%== ($section =~ /tfs/i)?' class="active"':''%>><a href='/tfs'>Transcription factors</a></li>
+                <li<%== ($section =~ /contact/i)?' class="active"':''%>><a href='/contact'>Contact</a></li>
+            </ul>
+		</div><!--/nav-collapse -->
+    </div><!--/container-->
+    </div><!--/navbar-inner-->
+    </div><!--/navbar-fixed-top-->

@@ -13,6 +13,11 @@ sub startup {
 
   # Normal route to controller
   $r->get('/')->to('example#welcome');
+  $r->get('/modules')->to('example#modules');
+  $r->get('/genes')->to('example#genes');
+  $r->get('/modulenet')->to('example#moduleNet');
+  $r->get('/moduletabledenovo')->to('example#moduleTableDenovo');
+  $r->get('/moduletableGWAS')->to('example#moduleTableGWAS');
 }
 
 1;
