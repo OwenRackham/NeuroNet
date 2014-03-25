@@ -6,7 +6,7 @@ sub welcome {
   my $self = shift;
 
   # Render template "example/welcome.html.ep" with message
-  $self->render(msg => 'Welcome to NeuroNet');
+  $self->render(msg => 'Welcome to NBIGN');
 }
 
 sub modules {
@@ -23,7 +23,7 @@ sub modules {
   # Render template "example/welcome.html.ep" with message
   $self->stash(module=>$module);
   $self->stash(strength=>$strength);
-  $self->render(msg => 'Modules in NeuroNet: Module $module');
+  $self->render(msg => 'Modules in NBIGN: Module $module');
 }
 
 sub moduleNet {

@@ -1,6 +1,6 @@
 
 % layout 'bootstrap';
-% title 'Welcome to NeuroNet';
+% title 'Welcome to NBIGN';
 <div class="container">
 	<div class="jumbotron">
 				<h1><%= $msg %></h1>
@@ -10,9 +10,41 @@
 				 <br>
 				 <hr>
 				 <div class="centered">
-				 	<p><a class="btn btn-primary btn-lg">Learn more</a>
-				 	<a class="btn btn-primary btn-lg">Select module</a>
-				 	<a class="btn btn-primary btn-lg">Select gene</a></p>
+				 	
+				 	
+				 	<div class="btn-group">
+  					<button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown">
+    				Select Module <span class="caret"></span>
+  					</button>
+  					<ul class="dropdown-menu" role="menu">
+    				<li><a href="modules?module=1">Module 1</a></li>
+    				<li><a href="modules?module=2">Module 2</a></li>
+    				<li><a href="modules?module=3">Module 3</a></li>
+    				<li><a href="modules?module=4">Module 4</a></li>
+    				<li><a href="modules?module=5">Module 5</a></li>
+    				<li><a href="modules?module=6">Module 6</a></li>
+    				<li><a href="modules?module=7">Module 7</a></li>
+    				<li><a href="modules?module=8">Module 8</a></li>
+    				<li><a href="modules?module=9">Module 9</a></li>
+    				<li><a href="modules?module=10">Module 10</a></li>
+    				<li><a href="modules?module=11">Module 11</a></li>
+    				<li><a href="modules?module=12">Module 12</a></li>
+    				<li><a href="modules?module=13">Module 13</a></li>
+    				<li><a href="modules?module=14">Module 14</a></li>
+    				<li><a href="modules?module=15">Module 15</a></li>
+    				<li><a href="modules?module=16">Module 16</a></li>
+    				<li><a href="modules?module=17">Module 17</a></li>
+    				<li><a href="modules?module=18">Module 18</a></li>
+    				<li><a href="modules?module=19">Module 19</a></li>
+    				<li><a href="modules?module=20">Module 20</a></li>
+    				<li><a href="modules?module=21">Module 21</a></li>
+    				<li><a href="modules?module=22">Module 22</a></li>
+    				<li><a href="modules?module=23">Module 23</a></li>
+    				<li><a href="modules?module=24">Module 24</a></li>
+  					</ul>
+  					
+					</div>
+				 	<a class="btn btn-primary btn-lg">Learn more</a>
 				 </div>
 		</div>	
 		<div class="row">

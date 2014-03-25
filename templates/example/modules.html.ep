@@ -1,6 +1,11 @@
 
 % layout 'bootstrap';
 % title 'Welcome to NeuroNet';
+<script>
+      // remove classes from all
+     $("#home_menu").removeClass("active");
+      $("#modules_menu").addClass("active");
+</script>
 <div class="container">
 		<div class="row">
 			<div class="col-lg-12 centered" id="intro">
@@ -11,9 +16,8 @@
 		<div class="row">
 		<div class="col-lg-12 centered">
 			<div class="centered">
-					
-				 	<p><a class="btn btn-primary btn-lg" id="DAPPLE">DAPPLE</a>
-				 	<a class="btn  btn-lg" id="STRING">STRING</a>
+				 	<a class="btn  btn-lg btn-primary" id="STRING">STRING</a>
+				 	<a class="btn  btn-lg" id="DAPPLE">DAPPLE</a>
 				 	<a class="btn  btn-lg" id="COEXP">CO-EXPRESSION</a></p>
 				 	<p> Select which interaction type you would like to view. </p>
 			</div>
@@ -23,7 +27,8 @@
 		<div class="col-lg-12 centered" id="module_net">
 		</div>
 		<div class="col-lg-6" id="denovo">
-		<h2>Rare Denovo Mutations</h2><a class="btn btn-primary btn-sm" id="showDenovo">show on network</a>
+		<h2>Rare Denovo Mutations</h2>
+		<!--<a class="btn btn-primary btn-sm" id="showDenovo">show on network</a>-->
 		
 		<table class="table table-striped table-hover " id="denovo_table">
   <thead>
@@ -68,7 +73,7 @@ var gwasdata;
 </div>		
 
 <div class="col-lg-6" id="gwas">
-		<h2>GWAS variation</h2><a class="btn btn-primary btn-sm" id="showGWAS">show on network</a>
+		<h2>GWAS variation</h2><!--<a class="btn btn-primary btn-sm" id="showGWAS">show on network</a>-->
 		<table class="table table-striped table-hover " id="gwas_table">
   <thead>
     <tr>
