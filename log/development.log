@@ -3529,3 +3529,309 @@ Global symbol "$section" requires explicit package name at template layouts/boot
 [Tue Mar 25 11:22:10 2014] [debug] Rendering template "example/welcome.html.ep".
 [Tue Mar 25 11:22:10 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
 [Tue Mar 25 11:22:10 2014] [debug] 200 OK (0.017272s, 57.897/s).
+[Tue Mar 25 11:25:19 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:25:19 2014] [debug] GET "/modules".
+[Tue Mar 25 11:25:19 2014] [debug] Routing to controller "NeuroNet::Example" and action "modules".
+[Tue Mar 25 11:25:19 2014] [debug] Rendering template "example/modules.html.ep".
+[Tue Mar 25 11:25:19 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:25:19 2014] [debug] 200 OK (0.022982s, 43.512/s).
+[Tue Mar 25 11:25:20 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:25:20 2014] [debug] GET "/moduletabledenovo".
+[Tue Mar 25 11:25:20 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleTableDenovo".
+[Tue Mar 25 11:25:20 2014] [debug] 200 OK (0.021410s, 46.707/s).
+[Tue Mar 25 11:25:20 2014] [debug] GET "/moduletableGWAS".
+[Tue Mar 25 11:25:20 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleTableGWAS".
+[Tue Mar 25 11:25:20 2014] [debug] 200 OK (0.010362s, 96.506/s).
+[Tue Mar 25 11:25:20 2014] [debug] GET "/modulenet".
+[Tue Mar 25 11:25:20 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleNet".
+[Tue Mar 25 11:25:20 2014] [debug] 200 OK (0.005355s, 186.741/s).
+[Tue Mar 25 11:26:01 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:26:01 2014] [debug] GET "/modules".
+[Tue Mar 25 11:26:01 2014] [debug] Routing to controller "NeuroNet::Example" and action "modules".
+[Tue Mar 25 11:26:01 2014] [debug] Rendering template "example/modules.html.ep".
+[Tue Mar 25 11:26:01 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:26:01 2014] [debug] 200 OK (0.032587s, 30.687/s).
+[Tue Mar 25 11:26:02 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:26:02 2014] [debug] GET "/moduletabledenovo".
+[Tue Mar 25 11:26:02 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleTableDenovo".
+[Tue Mar 25 11:26:02 2014] [debug] 200 OK (0.020654s, 48.417/s).
+[Tue Mar 25 11:26:02 2014] [debug] GET "/moduletableGWAS".
+[Tue Mar 25 11:26:02 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleTableGWAS".
+[Tue Mar 25 11:26:02 2014] [debug] 200 OK (0.008295s, 120.555/s).
+[Tue Mar 25 11:26:02 2014] [debug] GET "/modulenet".
+[Tue Mar 25 11:26:02 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleNet".
+[Tue Mar 25 11:26:02 2014] [debug] 200 OK (0.005387s, 185.632/s).
+[Tue Mar 25 11:26:04 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:26:04 2014] [debug] GET "/modulenet".
+[Tue Mar 25 11:26:04 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleNet".
+[Tue Mar 25 11:26:04 2014] [debug] 200 OK (0.021515s, 46.479/s).
+[Tue Mar 25 11:27:12 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:27:12 2014] [debug] GET "/modulenet".
+[Tue Mar 25 11:27:12 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleNet".
+[Tue Mar 25 11:27:12 2014] [debug] 200 OK (0.037145s, 26.922/s).
+[Tue Mar 25 11:27:20 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:27:20 2014] [debug] GET "/modulenet".
+[Tue Mar 25 11:27:20 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleNet".
+[Tue Mar 25 11:27:20 2014] [debug] 200 OK (0.044693s, 22.375/s).
+[Tue Mar 25 11:30:07 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:30:07 2014] [debug] GET "/modules".
+[Tue Mar 25 11:30:07 2014] [debug] Routing to controller "NeuroNet::Example" and action "modules".
+[Tue Mar 25 11:30:07 2014] [debug] Rendering template "example/modules.html.ep".
+[Tue Mar 25 11:30:07 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:30:07 2014] [debug] 200 OK (0.022459s, 44.526/s).
+[Tue Mar 25 11:30:08 2014] [debug] GET "/moduletabledenovo".
+[Tue Mar 25 11:30:08 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleTableDenovo".
+[Tue Mar 25 11:30:08 2014] [debug] 200 OK (0.011646s, 85.866/s).
+[Tue Mar 25 11:30:08 2014] [debug] GET "/moduletableGWAS".
+[Tue Mar 25 11:30:08 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleTableGWAS".
+[Tue Mar 25 11:30:08 2014] [debug] 200 OK (0.008616s, 116.063/s).
+[Tue Mar 25 11:30:09 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:30:09 2014] [debug] GET "/modulenet".
+[Tue Mar 25 11:30:09 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleNet".
+[Tue Mar 25 11:30:09 2014] [debug] 200 OK (0.029494s, 33.905/s).
+[Tue Mar 25 11:30:13 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:30:13 2014] [debug] GET "/modulenet".
+[Tue Mar 25 11:30:13 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleNet".
+[Tue Mar 25 11:30:13 2014] [debug] 200 OK (0.021441s, 46.640/s).
+[Tue Mar 25 11:31:55 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:31:55 2014] [debug] GET "/modules".
+[Tue Mar 25 11:31:55 2014] [debug] Routing to controller "NeuroNet::Example" and action "modules".
+[Tue Mar 25 11:31:55 2014] [debug] Rendering template "example/modules.html.ep".
+[Tue Mar 25 11:31:55 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:31:55 2014] [debug] 200 OK (0.022866s, 43.733/s).
+[Tue Mar 25 11:31:56 2014] [debug] GET "/moduletabledenovo".
+[Tue Mar 25 11:31:56 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleTableDenovo".
+[Tue Mar 25 11:31:56 2014] [debug] 200 OK (0.011278s, 88.668/s).
+[Tue Mar 25 11:31:56 2014] [debug] GET "/moduletableGWAS".
+[Tue Mar 25 11:31:56 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleTableGWAS".
+[Tue Mar 25 11:31:56 2014] [debug] 200 OK (0.008596s, 116.333/s).
+[Tue Mar 25 11:31:57 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:31:57 2014] [debug] GET "/modulenet".
+[Tue Mar 25 11:31:57 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleNet".
+[Tue Mar 25 11:31:57 2014] [debug] 200 OK (0.026358s, 37.939/s).
+[Tue Mar 25 11:32:07 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:32:07 2014] [debug] GET "/modules".
+[Tue Mar 25 11:32:07 2014] [debug] Routing to controller "NeuroNet::Example" and action "modules".
+[Tue Mar 25 11:32:07 2014] [debug] Rendering template "example/modules.html.ep".
+[Tue Mar 25 11:32:07 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:32:07 2014] [debug] 200 OK (0.022870s, 43.725/s).
+[Tue Mar 25 11:32:08 2014] [debug] GET "/moduletabledenovo".
+[Tue Mar 25 11:32:08 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleTableDenovo".
+[Tue Mar 25 11:32:08 2014] [debug] 200 OK (0.012819s, 78.009/s).
+[Tue Mar 25 11:32:08 2014] [debug] GET "/moduletableGWAS".
+[Tue Mar 25 11:32:08 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleTableGWAS".
+[Tue Mar 25 11:32:08 2014] [debug] 200 OK (0.012119s, 82.515/s).
+[Tue Mar 25 11:32:09 2014] [debug] GET "/modulenet".
+[Tue Mar 25 11:32:09 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleNet".
+[Tue Mar 25 11:32:09 2014] [debug] 200 OK (0.007761s, 128.849/s).
+[Tue Mar 25 11:32:12 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:32:12 2014] [debug] GET "/".
+[Tue Mar 25 11:32:12 2014] [debug] Routing to controller "NeuroNet::Example" and action "welcome".
+[Tue Mar 25 11:32:12 2014] [debug] Rendering template "example/welcome.html.ep".
+[Tue Mar 25 11:32:12 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:32:12 2014] [debug] 200 OK (0.017014s, 58.775/s).
+[Tue Mar 25 11:32:20 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:32:20 2014] [debug] GET "/modules".
+[Tue Mar 25 11:32:20 2014] [debug] Routing to controller "NeuroNet::Example" and action "modules".
+[Tue Mar 25 11:32:20 2014] [debug] Rendering template "example/modules.html.ep".
+[Tue Mar 25 11:32:20 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:32:20 2014] [debug] 200 OK (0.022799s, 43.862/s).
+[Tue Mar 25 11:32:21 2014] [debug] GET "/moduletabledenovo".
+[Tue Mar 25 11:32:21 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleTableDenovo".
+[Tue Mar 25 11:32:21 2014] [debug] 200 OK (0.011127s, 89.871/s).
+[Tue Mar 25 11:32:21 2014] [debug] GET "/moduletableGWAS".
+[Tue Mar 25 11:32:21 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleTableGWAS".
+[Tue Mar 25 11:32:21 2014] [debug] 200 OK (0.010852s, 92.149/s).
+[Tue Mar 25 11:32:21 2014] [debug] GET "/modulenet".
+[Tue Mar 25 11:32:21 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleNet".
+[Tue Mar 25 11:32:21 2014] [debug] 200 OK (0.007583s, 131.874/s).
+[Tue Mar 25 11:32:27 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:32:27 2014] [debug] GET "/modulenet".
+[Tue Mar 25 11:32:27 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleNet".
+[Tue Mar 25 11:32:27 2014] [debug] 200 OK (0.021436s, 46.650/s).
+[Tue Mar 25 11:32:29 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:32:29 2014] [debug] GET "/modulenet".
+[Tue Mar 25 11:32:29 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleNet".
+[Tue Mar 25 11:32:29 2014] [debug] 200 OK (0.050520s, 19.794/s).
+[Tue Mar 25 11:35:48 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:35:48 2014] [debug] GET "/".
+[Tue Mar 25 11:35:48 2014] [debug] Routing to controller "NeuroNet::Example" and action "welcome".
+[Tue Mar 25 11:35:48 2014] [debug] Rendering template "example/welcome.html.ep".
+[Tue Mar 25 11:35:48 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:35:48 2014] [debug] 200 OK (0.019476s, 51.345/s).
+[Tue Mar 25 11:36:20 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:36:20 2014] [debug] GET "/".
+[Tue Mar 25 11:36:20 2014] [debug] Routing to controller "NeuroNet::Example" and action "welcome".
+[Tue Mar 25 11:36:20 2014] [debug] Rendering template "example/welcome.html.ep".
+[Tue Mar 25 11:36:20 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:36:20 2014] [debug] 200 OK (0.016448s, 60.798/s).
+[Tue Mar 25 11:38:34 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:38:34 2014] [debug] GET "/".
+[Tue Mar 25 11:38:34 2014] [debug] Routing to controller "NeuroNet::Example" and action "welcome".
+[Tue Mar 25 11:38:34 2014] [debug] Rendering template "example/welcome.html.ep".
+[Tue Mar 25 11:38:34 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:38:34 2014] [debug] 200 OK (0.014892s, 67.150/s).
+[Tue Mar 25 11:38:56 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:38:56 2014] [debug] GET "/".
+[Tue Mar 25 11:38:56 2014] [debug] Routing to controller "NeuroNet::Example" and action "welcome".
+[Tue Mar 25 11:38:56 2014] [debug] Rendering template "example/welcome.html.ep".
+[Tue Mar 25 11:38:56 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:38:56 2014] [debug] 200 OK (0.023453s, 42.638/s).
+[Tue Mar 25 11:38:57 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:39:15 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:39:15 2014] [debug] GET "/".
+[Tue Mar 25 11:39:15 2014] [debug] Routing to controller "NeuroNet::Example" and action "welcome".
+[Tue Mar 25 11:39:15 2014] [debug] Rendering template "example/welcome.html.ep".
+[Tue Mar 25 11:39:15 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:39:15 2014] [debug] 200 OK (0.015730s, 63.573/s).
+[Tue Mar 25 11:39:56 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:39:56 2014] [debug] GET "/".
+[Tue Mar 25 11:39:56 2014] [debug] Routing to controller "NeuroNet::Example" and action "welcome".
+[Tue Mar 25 11:39:56 2014] [debug] Rendering template "example/welcome.html.ep".
+[Tue Mar 25 11:39:56 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:39:56 2014] [debug] 200 OK (0.018392s, 54.371/s).
+[Tue Mar 25 11:40:50 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:40:50 2014] [debug] GET "/".
+[Tue Mar 25 11:40:50 2014] [debug] Routing to controller "NeuroNet::Example" and action "welcome".
+[Tue Mar 25 11:40:50 2014] [debug] Rendering template "example/welcome.html.ep".
+[Tue Mar 25 11:40:50 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:40:50 2014] [debug] 200 OK (0.016033s, 62.371/s).
+[Tue Mar 25 11:41:17 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:41:17 2014] [debug] GET "/".
+[Tue Mar 25 11:41:17 2014] [debug] Routing to controller "NeuroNet::Example" and action "welcome".
+[Tue Mar 25 11:41:17 2014] [debug] Rendering template "example/welcome.html.ep".
+[Tue Mar 25 11:41:17 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:41:17 2014] [debug] 200 OK (0.015741s, 63.528/s).
+[Tue Mar 25 11:41:18 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:41:35 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:41:35 2014] [debug] GET "/".
+[Tue Mar 25 11:41:35 2014] [debug] Routing to controller "NeuroNet::Example" and action "welcome".
+[Tue Mar 25 11:41:35 2014] [debug] Rendering template "example/welcome.html.ep".
+[Tue Mar 25 11:41:35 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:41:35 2014] [debug] 200 OK (0.018216s, 54.897/s).
+[Tue Mar 25 11:41:56 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:41:56 2014] [debug] GET "/".
+[Tue Mar 25 11:41:56 2014] [debug] Routing to controller "NeuroNet::Example" and action "welcome".
+[Tue Mar 25 11:41:56 2014] [debug] Rendering template "example/welcome.html.ep".
+[Tue Mar 25 11:41:56 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:41:56 2014] [debug] 200 OK (0.018072s, 55.334/s).
+[Tue Mar 25 11:42:16 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:42:16 2014] [debug] GET "/".
+[Tue Mar 25 11:42:16 2014] [debug] Routing to controller "NeuroNet::Example" and action "welcome".
+[Tue Mar 25 11:42:16 2014] [debug] Rendering template "example/welcome.html.ep".
+[Tue Mar 25 11:42:16 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:42:16 2014] [debug] 200 OK (0.016464s, 60.739/s).
+[Tue Mar 25 11:44:21 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:44:21 2014] [debug] GET "/".
+[Tue Mar 25 11:44:21 2014] [debug] Routing to controller "NeuroNet::Example" and action "welcome".
+[Tue Mar 25 11:44:21 2014] [debug] Rendering template "example/welcome.html.ep".
+[Tue Mar 25 11:44:21 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:44:21 2014] [debug] 200 OK (0.015582s, 64.177/s).
+[Tue Mar 25 11:44:29 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:44:29 2014] [debug] GET "/modules".
+[Tue Mar 25 11:44:29 2014] [debug] Routing to controller "NeuroNet::Example" and action "modules".
+[Tue Mar 25 11:44:29 2014] [debug] Rendering template "example/modules.html.ep".
+[Tue Mar 25 11:44:29 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:44:29 2014] [debug] 200 OK (0.021008s, 47.601/s).
+[Tue Mar 25 11:44:30 2014] [debug] GET "/moduletabledenovo".
+[Tue Mar 25 11:44:30 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleTableDenovo".
+[Tue Mar 25 11:44:30 2014] [debug] 200 OK (0.012217s, 81.853/s).
+[Tue Mar 25 11:44:30 2014] [debug] GET "/moduletableGWAS".
+[Tue Mar 25 11:44:30 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleTableGWAS".
+[Tue Mar 25 11:44:30 2014] [debug] 200 OK (0.010388s, 96.265/s).
+[Tue Mar 25 11:44:31 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:44:31 2014] [debug] GET "/modulenet".
+[Tue Mar 25 11:44:31 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleNet".
+[Tue Mar 25 11:44:31 2014] [debug] 200 OK (0.023099s, 43.292/s).
+[Tue Mar 25 11:44:32 2014] [debug] GET "/modulenet".
+[Tue Mar 25 11:44:32 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleNet".
+[Tue Mar 25 11:44:32 2014] [debug] 200 OK (0.006656s, 150.240/s).
+[Tue Mar 25 11:44:35 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:44:35 2014] [debug] GET "/modulenet".
+[Tue Mar 25 11:44:35 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleNet".
+[Tue Mar 25 11:44:35 2014] [debug] 200 OK (0.051833s, 19.293/s).
+[Tue Mar 25 11:45:35 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:45:35 2014] [debug] GET "/".
+[Tue Mar 25 11:45:35 2014] [debug] Routing to controller "NeuroNet::Example" and action "welcome".
+[Tue Mar 25 11:45:35 2014] [debug] Rendering template "example/welcome.html.ep".
+[Tue Mar 25 11:45:35 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:45:35 2014] [debug] 200 OK (0.015545s, 64.329/s).
+[Tue Mar 25 11:46:08 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:46:08 2014] [debug] GET "/".
+[Tue Mar 25 11:46:08 2014] [debug] Routing to controller "NeuroNet::Example" and action "welcome".
+[Tue Mar 25 11:46:08 2014] [debug] Rendering template "example/welcome.html.ep".
+[Tue Mar 25 11:46:08 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:46:08 2014] [debug] 200 OK (0.016095s, 62.131/s).
+[Tue Mar 25 11:46:20 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:46:20 2014] [debug] GET "/".
+[Tue Mar 25 11:46:20 2014] [debug] Routing to controller "NeuroNet::Example" and action "welcome".
+[Tue Mar 25 11:46:20 2014] [debug] Rendering template "example/welcome.html.ep".
+[Tue Mar 25 11:46:20 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:46:20 2014] [debug] 200 OK (0.017581s, 56.880/s).
+[Tue Mar 25 11:46:22 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:46:22 2014] [debug] GET "/".
+[Tue Mar 25 11:46:22 2014] [debug] Routing to controller "NeuroNet::Example" and action "welcome".
+[Tue Mar 25 11:46:22 2014] [debug] Rendering template "example/welcome.html.ep".
+[Tue Mar 25 11:46:22 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:46:22 2014] [debug] 200 OK (0.015477s, 64.612/s).
+[Tue Mar 25 11:46:27 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:46:27 2014] [debug] GET "/".
+[Tue Mar 25 11:46:27 2014] [debug] Routing to controller "NeuroNet::Example" and action "welcome".
+[Tue Mar 25 11:46:27 2014] [debug] Rendering template "example/welcome.html.ep".
+[Tue Mar 25 11:46:27 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:46:27 2014] [debug] 200 OK (0.015907s, 62.865/s).
+[Tue Mar 25 11:46:36 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:46:36 2014] [debug] GET "/".
+[Tue Mar 25 11:46:36 2014] [debug] Routing to controller "NeuroNet::Example" and action "welcome".
+[Tue Mar 25 11:46:36 2014] [debug] Rendering template "example/welcome.html.ep".
+[Tue Mar 25 11:46:36 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:46:36 2014] [debug] 200 OK (0.015865s, 63.032/s).
+[Tue Mar 25 11:46:39 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:46:39 2014] [debug] GET "/modules".
+[Tue Mar 25 11:46:39 2014] [debug] Routing to controller "NeuroNet::Example" and action "modules".
+[Tue Mar 25 11:46:39 2014] [debug] Rendering template "example/modules.html.ep".
+[Tue Mar 25 11:46:39 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:46:39 2014] [debug] 200 OK (0.021459s, 46.600/s).
+[Tue Mar 25 11:46:41 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:46:41 2014] [debug] GET "/moduletabledenovo".
+[Tue Mar 25 11:46:41 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleTableDenovo".
+[Tue Mar 25 11:46:41 2014] [debug] 200 OK (0.022713s, 44.028/s).
+[Tue Mar 25 11:46:41 2014] [debug] GET "/moduletableGWAS".
+[Tue Mar 25 11:46:41 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleTableGWAS".
+[Tue Mar 25 11:46:41 2014] [debug] 200 OK (0.035519s, 28.154/s).
+[Tue Mar 25 11:46:41 2014] [debug] GET "/modulenet".
+[Tue Mar 25 11:46:41 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleNet".
+[Tue Mar 25 11:46:41 2014] [debug] 200 OK (0.028154s, 35.519/s).
+[Tue Mar 25 11:47:47 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:47:47 2014] [debug] GET "/modules".
+[Tue Mar 25 11:47:47 2014] [debug] Routing to controller "NeuroNet::Example" and action "modules".
+[Tue Mar 25 11:47:47 2014] [debug] Rendering template "example/modules.html.ep".
+[Tue Mar 25 11:47:47 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:47:47 2014] [debug] 200 OK (0.022501s, 44.442/s).
+[Tue Mar 25 11:47:49 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:47:49 2014] [debug] GET "/moduletabledenovo".
+[Tue Mar 25 11:47:49 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleTableDenovo".
+[Tue Mar 25 11:47:49 2014] [debug] 200 OK (0.025247s, 39.609/s).
+[Tue Mar 25 11:47:49 2014] [debug] GET "/moduletableGWAS".
+[Tue Mar 25 11:47:49 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleTableGWAS".
+[Tue Mar 25 11:47:49 2014] [debug] 200 OK (0.037155s, 26.914/s).
+[Tue Mar 25 11:47:49 2014] [debug] GET "/modulenet".
+[Tue Mar 25 11:47:49 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleNet".
+[Tue Mar 25 11:47:49 2014] [debug] 200 OK (0.029757s, 33.606/s).
+[Tue Mar 25 11:49:14 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:49:14 2014] [debug] GET "/modules".
+[Tue Mar 25 11:49:14 2014] [debug] Routing to controller "NeuroNet::Example" and action "modules".
+[Tue Mar 25 11:49:14 2014] [debug] Rendering template "example/modules.html.ep".
+[Tue Mar 25 11:49:14 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:49:14 2014] [debug] 200 OK (0.021891s, 45.681/s).
+[Tue Mar 25 11:49:14 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:49:15 2014] [debug] GET "/moduletabledenovo".
+[Tue Mar 25 11:49:15 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleTableDenovo".
+[Tue Mar 25 11:49:15 2014] [debug] 200 OK (0.037005s, 27.023/s).
+[Tue Mar 25 11:49:15 2014] [debug] GET "/moduletableGWAS".
+[Tue Mar 25 11:49:15 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleTableGWAS".
+[Tue Mar 25 11:49:15 2014] [debug] 200 OK (0.038259s, 26.138/s).
+[Tue Mar 25 11:49:16 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:49:16 2014] [debug] GET "/modulenet".
+[Tue Mar 25 11:49:16 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleNet".
+[Tue Mar 25 11:49:16 2014] [debug] 200 OK (0.046079s, 21.702/s).
