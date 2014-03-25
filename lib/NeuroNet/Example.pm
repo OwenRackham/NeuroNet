@@ -92,7 +92,7 @@ sub getModuleGenes {
 sub getModuleNet {
     my $module = shift;
     my $strength = shift;
-    my $dbh = DBConnect('SNPs','orackhamlocal','');
+    my $dbh = DBConnect('SNPs');
 	my $sth =   $dbh->prepare( "select a.Symbol,b.Symbol,strength from KirMod a,KirMod b,STRING_net where a.Ensembl_G_ID = STRING_net.source_ENSG and b.Ensembl_G_ID = STRING_net.target_ENSG and a.Cluster = $module and b.Cluster =$module;"); 
 	$sth->execute();
 	my %links;
@@ -116,7 +116,7 @@ sub getModuleNet {
 
 sub getDAPPLENet {
     my $module = shift;
-    my $dbh = DBConnect('SNPs','orackhamlocal','');
+    my $dbh = DBConnect('SNPs');
 	my $sth =   $dbh->prepare( "select source_Symbol,target_Symbol from DAPPLE_net where Cluster = ?;"); 
 	$sth->execute($module);
 	my %links;
@@ -142,7 +142,7 @@ sub getCoExpNet {
     my $module = shift;
     my $nodes = getModuleGenes($module);
     my %nodes = %{$nodes};
-    my $dbh = DBConnect('SNPs','orackhamlocal','');
+    my $dbh = DBConnect('SNPs');
 	my $sth =   $dbh->prepare( "select source_Symbol,target_Symbol from CoExpNet where Cluster = ? and stength > 0.8;"); 
 	$sth->execute($module);
 	my %links;
@@ -167,7 +167,7 @@ sub getCoExpNet {
 
 sub getModuleTableDenovo {
     my $module = shift;
-    my $dbh = DBConnect('SNPs','orackhamlocal','');
+    my $dbh = DBConnect('SNPs');
 	my $sth =   $dbh->prepare( "select KirMod.Symbol,Type,Author,Disease from KirMod,denovo where KirMod.Symbol = denovo.Symbol and Cluster = ? order by Symbol;"); 
 	$sth->execute($module);
 	my @table;
@@ -184,7 +184,7 @@ sub getModuleTableDenovo {
 
 sub getModuleTableGWAS {
     my $module = shift;
-    my $dbh = DBConnect('SNPs','orackhamlocal','');
+    my $dbh = DBConnect('SNPs');
 	my $sth =   $dbh->prepare( "select distinct(KirMod.Symbol),disorder,adjP,minP from KirMod,GWAS,KirMap where KirMod.Symbol = GWAS.Symbol and GWAS.ENSG = KirMap.ENSG and adjP < 0.05 and Cluster = ? order by adjP asc;"); 
 	$sth->execute($module);
 	my @table;

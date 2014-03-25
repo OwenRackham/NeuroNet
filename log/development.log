@@ -3835,3 +3835,34 @@ Global symbol "$section" requires explicit package name at template layouts/boot
 [Tue Mar 25 11:49:16 2014] [debug] GET "/modulenet".
 [Tue Mar 25 11:49:16 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleNet".
 [Tue Mar 25 11:49:16 2014] [debug] 200 OK (0.046079s, 21.702/s).
+[Tue Mar 25 11:51:33 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:51:33 2014] [debug] GET "/modules".
+[Tue Mar 25 11:51:33 2014] [debug] Routing to controller "NeuroNet::Example" and action "modules".
+[Tue Mar 25 11:51:33 2014] [debug] Rendering template "example/modules.html.ep".
+[Tue Mar 25 11:51:33 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:51:33 2014] [debug] 200 OK (0.029160s, 34.294/s).
+[Tue Mar 25 11:51:34 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:51:34 2014] [debug] GET "/moduletabledenovo".
+[Tue Mar 25 11:51:34 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleTableDenovo".
+[Tue Mar 25 11:51:34 2014] [debug] 200 OK (0.029957s, 33.381/s).
+[Tue Mar 25 11:51:34 2014] [debug] GET "/moduletableGWAS".
+[Tue Mar 25 11:51:34 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleTableGWAS".
+[Tue Mar 25 11:51:34 2014] [debug] 200 OK (0.037169s, 26.904/s).
+[Tue Mar 25 11:51:34 2014] [debug] GET "/modulenet".
+[Tue Mar 25 11:51:34 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleNet".
+[Tue Mar 25 11:51:34 2014] [debug] 200 OK (0.038609s, 25.901/s).
+[Tue Mar 25 11:51:40 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Mar 25 11:51:40 2014] [debug] GET "/modules".
+[Tue Mar 25 11:51:40 2014] [debug] Routing to controller "NeuroNet::Example" and action "modules".
+[Tue Mar 25 11:51:40 2014] [debug] Rendering template "example/modules.html.ep".
+[Tue Mar 25 11:51:40 2014] [debug] Rendering template "layouts/bootstrap.html.ep".
+[Tue Mar 25 11:51:40 2014] [debug] 200 OK (0.022652s, 44.146/s).
+[Tue Mar 25 11:51:41 2014] [debug] GET "/moduletabledenovo".
+[Tue Mar 25 11:51:41 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleTableDenovo".
+[Tue Mar 25 11:51:41 2014] [debug] 200 OK (0.010705s, 93.414/s).
+[Tue Mar 25 11:51:41 2014] [debug] GET "/moduletableGWAS".
+[Tue Mar 25 11:51:41 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleTableGWAS".
+[Tue Mar 25 11:51:41 2014] [debug] 200 OK (0.003392s, 294.811/s).
+[Tue Mar 25 11:51:41 2014] [debug] GET "/modulenet".
+[Tue Mar 25 11:51:41 2014] [debug] Routing to controller "NeuroNet::Example" and action "moduleNet".
+[Tue Mar 25 11:51:41 2014] [debug] 200 OK (0.003644s, 274.424/s).
